@@ -1,3 +1,5 @@
+[![API-test](https://github.com/jeffvg/jest-api-test/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/jeffvg/jest-api-test/actions/workflows/ci.yml)
+
 # API Test Automation with TypeScript, Supertest and Jest
 
 This repository contains several test scripts for API test automation using:
