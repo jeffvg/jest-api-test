@@ -11,7 +11,7 @@ This repository contains several test scripts for API test automation using:
 - Jest test report
 
 ## Test API
-The API test examples is using the **Practice Software Testing API** site, a publicly available API for learning and practicing software testing. You can explore the API documentation and endpoints here:  
+The API test examples use the **Practice Software Testing API** site, a publicly available API for learning and practicing software testing. You can explore the API documentation and endpoints here:  
 **[Practice Software Testing API](https://api.practicesoftwaretesting.com/api/documentation#/)**
 
 ## Prerequisites

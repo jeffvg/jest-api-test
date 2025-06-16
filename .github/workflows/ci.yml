@@ -1,0 +1,33 @@
+name: API-test
+
+on:
+    push:
+        branches: ['dev', 'main']
+    pull_request:
+        branches: ['dev', 'main']
+    pull_request_target:
+        types:
+            - opened
+        branches:
+            - '*/*'
+
+permissions:
+    pull-requests: write
+    contents: read
+
+jobs:
+    api_test:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [20.x]
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'yarn'
+            - run: yarn --immutable
+            - run: yarn test
+
