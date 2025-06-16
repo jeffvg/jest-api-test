@@ -22,7 +22,7 @@ The API test examples use the **Practice Software Testing API** site, a publicly
 ## Setup and Run
 1. Clone this repository:
    ```sh
-   git clone
+   git clone https://github.com/jeffvg/jest-api-test.git
    ```
 2. Navigate to the project directory:
    ```sh
